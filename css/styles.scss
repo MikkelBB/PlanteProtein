@@ -39,7 +39,33 @@ $green: #a6cf9a;
 $red: #E55B69;
 //section: Headerfooter-start
 #infotop{
-  background-color: ;
+  background-color: $green;
+  height: 40px;
+  padding: 10px;
+  color: white;
+}
+nav{
+  position: relative;
+  height: 50px;
+}
+#burgermenu{
+  padding: 0 20px;
+  color: $green;
+}
+
+#menupunkter{
+  position: absolute;
+  display: none;
+  width: 100%;
+  z-index: 100;
+  a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: $green;
+    text-align: center;
+    height: 50px;
+  }
 }
 //section: Headerfooter-slut
 
@@ -64,6 +90,11 @@ $red: #E55B69;
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  //section: Headerfooter-start
+  
+  //section: Headerfooter-slut
+
+
 }
 
 @media screen and (min-width: 992px) {

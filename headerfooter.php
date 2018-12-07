@@ -50,17 +50,41 @@
             <i class="fas fa-bars fa-2x"></i>
         </div>
         <span id="menupunkter">
-                <span id="menuhover">
+            <span id="menuhover">
                 <a href="index.html">Forside</a>
                 <a href="produkter.php">Produkter</a>
                 <a href="omos.html">Om os</a>
                 <a href="blog.php">Blog</a>
-                </span>
             </span>
+        </span>
     </nav>
 </header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function (e) {
+        var navOpen = 0;
 
+        $("#burgermenu").click(function(e) {
+            if(navOpen == 1){
+                $("#menupunkter").slideUp(500);
+                navOpen = 0;
+            }else{
+                $("#menupunkter").slideDown(600);
+                navOpen = 1;
+            }
+        });
 
+        $(window).resize(function(e){
+            var width = $(window).width();
+
+            if(width > 991){
+                $("#menupunkter").css({"display":"block"});
+            }else{
+                $("#menupunkter").css("display", "none");
+                navOpen = 0;
+            }
+        });
+    </script>
 
 </body>
 </html>

@@ -37,7 +37,7 @@ require("db/db.php");
 <meta property="og:locale" content="da_DK">
 
 <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-<link href="css/forside.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -38,5 +38,29 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+
+<header>
+    <a href="index.html"><img src="images/logo.png" id="logo" alt="JCI Slagelses logo"></a>
+    <nav>
+        <div id="burgermenu">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <span id="menupunkter">
+                <span id="menuhover">
+                <a href="index.html">Forside</a>
+                <a href="produkter.php">Produkter</a>
+                <a href="omos.html">Om os</a>
+                <a href="blog.php">Blog</a>
+                </span>
+                <span id="SoMeTop">
+                    <a href="https://www.facebook.com/jcislagelse/"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/?hl=da"><i class="fab fa-instagram fa-2x"></i></a>
+                </span>
+            </span>
+    </nav>
+</header>
+
+
+
 </body>
 </html>

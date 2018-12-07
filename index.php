@@ -1,6 +1,6 @@
 <?php
 
-require ("db/db.php");
+require("db/db.php");
 
 
 ?>
@@ -44,16 +44,18 @@ require ("db/db.php");
 
 </head>
 
+
+
 <?php $var = $eksamen["id"];?>
 
 <?php
-$eksamenQuery = mysqli_query($db, "SELECT * FROM eksamen WHERE pId = 2");
+$eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId = 2");
 while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
-    $var = $eksamen ["pId"];
+    $var = $eksamen["pId"];
     ?>
 
     <div class="stortbillede">
-        ...
+        Stortbillede
     </div>
 
     <?php
@@ -66,15 +68,55 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 
 
 <div class="nyheder">
-    Nyheder
+    <?php
+    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 3");
+    while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
+    $var = $eksamen ["pId"];
+    ?>
+
+    <div class="nyhedbilleder">
+        Nyheder
+    </div>
+
+        <?php
+    }
+
+
+    ?>
 </div>
+
+
+
 
 <div class="anbefalet">
-    Anbefalet til dig
+    <?php
+    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 4 OFFSET 3");
+    while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
+    $var = $eksamen ["pId"];
+    ?>
+
+    <div class="anbefaletbilleder">
+        Anbefalet
+    </div>
+        <?php
+    }
+
+
+    ?>
 </div>
 
+
+
 <div class="anmeldelser">
-    Anmeldelser
+    <div class="soeren">
+        Søren Henriksen
+    </div>
+    <div class="christina">
+        Christina Birkedal
+    </div>
+    <div class="jeppe">
+        Jeppe Norman
+    </div>
 </div>
 
 <!-- i <body> har man alt indhold på siden -->

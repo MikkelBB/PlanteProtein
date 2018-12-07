@@ -1,3 +1,11 @@
+<?php
+
+require ("db/db.php");
+
+
+?>
+
+
 <!doctype html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
@@ -36,12 +44,37 @@
 
 </head>
 
+<?php $var = $eksamen["id"];?>
+
+<?php
+$eksamenQuery = mysqli_query($db, "SELECT * FROM eksamen WHERE pId = 2");
+while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
+    $var = $eksamen ["pId"];
+    ?>
+
+    <div class="stortbillede">
+        ...
+    </div>
+
+    <?php
+}
+
+
+?>
+
+
+
+
 <div class="nyheder">
     Nyheder
 </div>
 
 <div class="anbefalet">
     Anbefalet til dig
+</div>
+
+<div class="anmeldelser">
+    Anmeldelser
 </div>
 
 <!-- i <body> har man alt indhold på siden -->

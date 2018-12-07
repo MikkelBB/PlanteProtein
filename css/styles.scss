@@ -7,73 +7,80 @@
 
 body {
   margin: 0; // Ingen kanter i siden af browser
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
+h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
 }
 
-ul, ol {
-  margin: 0; // Ingen ydre margen fra lister
-  padding: 0; // Ingen indre margen fra lister
-  list-style-position: inside; // List punkter står på linje
-}
+  h2, h3, h4, h5, h6 {
+    margin: 0; // Ingen ydre margen fra overskrifter
+    padding: 0; // Ingen indre margen fra overskrifter
+  }
 
-li {
-  margin: 0; // Ingen ydre margen fra listpunkter
-}
+  ul, ol {
+    margin: 0; // Ingen ydre margen fra lister
+    padding: 0; // Ingen indre margen fra lister
+    list-style-position: inside; // List punkter står på linje
+  }
 
-p {
-  margin: 0; // Ingen ydre margen fra paragraffer
-  padding: 0; // Ingen indre margen fra paragraffer
-}
+  li {
+    margin: 0; // Ingen ydre margen fra listpunkter
+  }
 
-// Sikrer billeder er responsive
-img {
-  display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
-  height: auto; // Højden skal tilpasse sig
-}
-$green: #a6cf9a;
-$red: #E55B69;
-//section: Headerfooter-start
-#infotop{
-  background-color: ;
-}
-//section: Headerfooter-slut
+  p {
+    margin: 0; // Ingen ydre margen fra paragraffer
+    padding: 0; // Ingen indre margen fra paragraffer
+  }
 
-//section: Forside-start
-//section: Forside-slut
+  // Sikrer billeder er responsive
+  img {
+    display: block; // Billeder er et element (laver linjeskift)
+    max-width: 100%; // Bredde må maks fylde 100%
+    height: auto; // Højden skal tilpasse sig
+  }
+  $green: #a6cf9a;
+  $red: #E55B69;
+  //section: Headerfooter-start
+  #infotop{
+  }
+  //section: Headerfooter-slut
 
-//section: Produkter-start
-//section: Produkter-slut
+  //section: Forside-start
+  //section: Forside-slut
 
-//section: produkterinfo-start
-//section: produkterinfo-slut
+  //section: Produkter-start
+  //section: Produkter-slut
 
-//section: Omos-start
-//section: Omos-slut
+  //section: produkterinfo-start
+  //section: produkterinfo-slut
 
-//section: Blog-start
-//section: Blog-slut
+  //section: Omos-start
+  //section: Omos-slut
 
-//section: Bloginfo-start
-//section: Bloginfo-slut
+  //section: Blog-start
+  //section: Blog-slut
+
+  //section: Bloginfo-start
+  //section: Bloginfo-slut
 
 
-@media screen and (min-width: 768px) {
-  // Alt der ændres i tablet stående fra mobil
-}
+  @media screen and (min-width: 768px) {
+    // Alt der ændres i tablet stående fra mobil
+  }
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
-}
+  @media screen and (min-width: 992px) {
+    // Alt der ændres i tablet liggende fra mobil og tablet stående
+  }
 
-@media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-}
+  @media screen and (min-width: 1200px) {
+    // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  }
 
-@media print {
-  // Alt der gælder for print specifikt
-}
+  @media print {
+    // Alt der gælder for print specifikt
+  }

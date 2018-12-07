@@ -30,7 +30,8 @@
 
 <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
 <link href="css/styles.css" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/una2owl.css">
 <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 

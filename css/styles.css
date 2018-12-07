@@ -33,4 +33,31 @@ img {
   max-width: 100%;
   height: auto; }
 
+#infotop {
+  background-color: #a6cf9a;
+  height: 40px;
+  padding: 10px;
+  color: white; }
+
+nav {
+  position: relative;
+  height: 50px; }
+
+#burgermenu {
+  padding: 0 20px;
+  color: #a6cf9a; }
+
+#menupunkter {
+  position: absolute;
+  display: none;
+  width: 100%;
+  z-index: 100; }
+  #menupunkter a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #a6cf9a;
+    text-align: center;
+    height: 50px; }
+
 /*# sourceMappingURL=styles.css.map */

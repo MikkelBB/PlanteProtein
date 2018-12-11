@@ -33,4 +33,90 @@ img {
   max-width: 100%;
   height: auto; }
 
+.nyhedtekst {
+  text-align: center; }
+
+.nyheder {
+  margin-right: auto;
+  margin-left: auto; }
+
+.nyhedbilleder {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-bottom: solid 1px #a6cf9a;
+  width: 50%; }
+
+.nyhedsend {
+  text-align: center; }
+
+.nyhedbilleder img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 250px; }
+
+.anbefalettekst {
+  text-align: center; }
+
+.anbefaletbilleder {
+  width: 50%;
+  border-bottom: solid 1px #a6cf9a;
+  margin-left: auto;
+  margin-right: auto; }
+
+.anbefaletsend {
+  text-align: center; }
+
+h2 {
+  color: #a6cf9a; }
+
+p {
+  text-align: center;
+  width: 50%;
+  margin: auto; }
+
+.soeren {
+  text-align: center;
+  border: 3px solid green; }
+
+.anmeldelser {
+  text-align: center; }
+
+.soerenbillede {
+  background-image: url("../images/photo-1496345875659-11f7dd282d1d.jpeg");
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid green;
+  margin-right: auto;
+  margin-left: auto; }
+
+.soeren img {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.christina img {
+  width: 30%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.christina {
+  text-align: center; }
+
+.jeppe img {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.jeppe {
+  text-align: center; }
+
+.nyhedbilleder img {
+  width: 50%; }
+
 /*# sourceMappingURL=styles.css.map */

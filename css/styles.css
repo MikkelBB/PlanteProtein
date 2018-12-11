@@ -60,6 +60,21 @@ nav {
     text-align: center;
     height: 50px; }
 
+footer {
+  background-color: #a6cf9a;
+  width: 100%;
+  height: 550px;
+  color: white; }
+
+.footerimg {
+  Padding: 0 12% 0 10%; }
+
+#infogrid {
+  text-align: center; }
+
+#tilmeld {
+  text-align: center; }
+
 .nyhedtekst {
   text-align: center; }
 

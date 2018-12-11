@@ -71,7 +71,7 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 <div class="nyheder">
     <div class="nyhedtekst"> <h1>Nyheder</h1></div>
     <?php
-    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 3 OFFSET 12");
+    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 3 OFFSET 14");
     while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
     $var = $eksamen ["pId"];
     ?>

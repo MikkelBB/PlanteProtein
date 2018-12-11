@@ -52,6 +52,12 @@ h1{
 
   //section: Forside-start
 
+.stortbillede img{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .nyhedtekst{
   text-align: center;
@@ -60,7 +66,18 @@ h1{
 .nyheder{
   margin-right: auto;
   margin-left: auto;
+
 }
+
+.nyhednavn{
+  text-align: center;
+}
+
+.nyhedpris{
+  color: $green;
+  text-align: center;
+}
+
 
 .nyhedbilleder{
   margin-left: auto;
@@ -68,20 +85,32 @@ h1{
   text-align: center;
   border-bottom: solid 1px $green;
   width: 50%;
+
 }
 
 .nyhedsend{
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 1px black;
+  width: 30%;
 }
 
 
 .nyhedbilleder img{
   margin-left: auto;
   margin-right: auto;
-  width: 50px;
-  height: 250px;
+  height: 200px;
+  width: 200px;
 }
 
+.anbefaletpris{
+  color: $green;
+  text-align: center;
+}
+
+.anbefaletnavn{
+  text-align: center;
+}
 
 .anbefalettekst{
   text-align: center;
@@ -112,7 +141,8 @@ p{
 
 .soeren{
   text-align: center;
-  border: 3px solid green;
+  padding: 15px;
+
 }
 
 .anmeldelser{
@@ -121,10 +151,11 @@ p{
 
 .soerenbillede{
   background-image: url("../images/photo-1496345875659-11f7dd282d1d.jpeg");
-  height: 50%;
-  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
-  border: 3px solid green;
   margin-right: auto;
   margin-left: auto;
 
@@ -132,6 +163,17 @@ p{
 
 .soeren img{
   width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.christinabillede{
+  background-image: url("../images/photo-1529932260967-af9d3bbd8138.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -146,6 +188,18 @@ p{
 
 .christina{
   text-align: center;
+  padding: 15px;
+}
+
+.jeppebillede{
+  background-image: url("../images/photo-1489779162738-f81aed9b0a25.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .jeppe img{
@@ -157,6 +211,7 @@ p{
 
 .jeppe{
   text-align: center;
+  padding: 15px;
 }
 
 .nyhedbilleder img{

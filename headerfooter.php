@@ -64,14 +64,31 @@
 
 
 <footer>
+    <img  class="footerimg" src="images/Planteprotein_logo_footer.png">
     <div id="infogrid">
-
-        <div id="info">
+        <i class="fas fa-map-marker-alt"></i> Fiktiv Adresse
+        <br><br>
+        <i class="fas fa-mobile-alt"></i> 33 44 55 66
+        <br><br>
+        <i class="fas fa-envelope"></i> Info@Planteprotein.dk
+        <br><br>
+        <i class="fab fa-facebook-square"></i> PlanteProtein
+    </div>
+    <br>
+    <div id="tilmeld">
+        <div id="formular">
 
         </div>
-    </div>
-    <div id="tilmeld">
-
+        <div id="betingelse">
+            Betingelser & Forsendelse
+            <br>
+            Betalingsmuligheder
+            <br>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-mastercard"></i>
+        </div>
     </div>
     <div id="instagram">
 

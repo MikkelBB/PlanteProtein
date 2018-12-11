@@ -33,6 +33,33 @@ img {
   max-width: 100%;
   height: auto; }
 
+#logo {
+  display: none; }
+
+#infotop {
+  display: none; }
+
+nav {
+  position: relative;
+  height: 50px; }
+
+#burgermenu {
+  padding: 0 20px;
+  color: black; }
+
+#menupunkter {
+  position: absolute;
+  display: none;
+  width: 100%;
+  z-index: 100; }
+  #menupunkter a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #a6cf9a;
+    text-align: center;
+    height: 50px; }
+
 .nyhedtekst {
   text-align: center; }
 
@@ -118,5 +145,38 @@ p {
 
 .nyhedbilleder img {
   width: 50%; }
+
+@media screen and (min-width: 768px) {
+  #infotop {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    background-color: #a6cf9a;
+    color: white; }
+
+  #infotoptekst {
+    grid-column: 1 / 2;
+    font-size: 18px;
+    padding-left: 10px; }
+
+  #infotopfacebook {
+    grid-column: 2 / 3;
+    color: white; }
+
+  #infotopinstagram {
+    grid-column: 3 / 4; }
+
+  #logo {
+    display: block;
+    width: 200px; }
+
+  #logomobil {
+    display: none; }
+
+  #burgermenu {
+    display: none; }
+
+  #menupunkter {
+    display: inline;
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */

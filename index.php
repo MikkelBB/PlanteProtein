@@ -50,13 +50,13 @@ require("db/db.php");
 <?php $var = $eksamen["id"];?>
 
 <?php
-$eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId = 2");
+$eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId = 1");
 while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
     $var = $eksamen["pId"];
     ?>
 
     <div class="stortbillede">
-        Stortbillede
+        <a href="produkterindividuel.php?id=<?php echo $var ?>"><img src="images/<?php echo $eksamen["pBillede"] ?>"></a>
     </div>
 
     <?php
@@ -64,20 +64,27 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 
 
 ?>
-
+<br>
 
 
 
 <div class="nyheder">
+    <div class="nyhedtekst"> <h1>Nyheder</h1></div>
     <?php
-    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 3");
+    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 3 OFFSET 12");
     while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
     $var = $eksamen ["pId"];
     ?>
 
     <div class="nyhedbilleder">
-        Nyheder
+
+        <a href="produkterindividuel.php?id=<?php echo $var ?>"><img src="images/<?php echo $eksamen["pBillede"] ?>"></a>
+
     </div>
+
+        <form class="nyhedsend" method="post" action="index.php">
+            <button type="submit">Læg i kurv</button>
+        </form>
 
         <?php
     }
@@ -90,15 +97,22 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 
 
 <div class="anbefalet">
+    <div class="anbefalettekst"> <h1>Anbefalet</h1> </div>
+
     <?php
-    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 4 OFFSET 3");
+    $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 4 OFFSET 5");
     while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
     $var = $eksamen ["pId"];
     ?>
 
     <div class="anbefaletbilleder">
-        Anbefalet
+        <a href="produkterindividuel.php?id=<?php echo $var ?>"><img src="images/<?php echo $eksamen["pBillede"] ?>"></a>
     </div>
+
+        <form class="anbefaletsend" method="post" action="index.php">
+            <button type="submit">Læg i kurv</button>
+        </form>
+
         <?php
     }
 
@@ -109,14 +123,22 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 
 
 <div class="anmeldelser">
+    <h1>Anmeldelser</h1>
     <div class="soeren">
-        Søren Henriksen
+        <div class="soerenbillede"></div>
+        <h2>Søren Henriksen</h2><br>
+        <p>"Jeg er så glad for at handle mine kosttilskud på Plante-protein.dk. De har hurtig levering og deres produkter er af den bedste kvalitet."</p>
     </div>
     <div class="christina">
-        Christina Birkedal
+        <img src="images/photo-1529932260967-af9d3bbd8138.jpeg">
+        <h2>Christina Birkedal</h2><br>
+        <p>"Jeg har altid prioriteret vegansk proteinpulver som kosttilskud men det har været svært at få fat i indtil jeg fandt Plante-protein.dk. Udover de gør det nemt for mig at få mine kosttilskud, så er det også lavet af en god kvalitet og er meget velsmagende."</p>
+
     </div>
     <div class="jeppe">
-        Jeppe Norman
+        <img src="images/photo-1489779162738-f81aed9b0a25.jpeg">
+        <h2>Jeppe Norman</h2><br>
+        <p>"Jeg bruger Plante-proteins produkter for at opnå de bedste resultater i min træning. Deres produkter er lækre, sunde og til en fornuftig pris. Deres kosttilskud hjælper mig hver dag til at holde en sund livsstil."</p>
     </div>
 </div>
 

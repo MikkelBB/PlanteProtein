@@ -1,5 +1,6 @@
+<?php require("db/db.php");?>
+
 <!doctype html>
-<!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
 <html lang="da">
 
@@ -39,12 +40,64 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
-<section>
+<section class="pTop sec">
     <h1>Produkterne er lavet af 5 forskellige planteprotein kilder</h1>
     <p>
         PlanteProtein, gør en ære i at sikre vores kunder det bedste vegan proteinpulver på markedet, til en overkommelig pris. Lavet af en unikt formuleret blanding af 5 plantebaserede proteiner. Hver pose er mejeri-fri, veganer-venlig og blandet med vores almindeligt anerkendte helt naturlig smag og farver, som udstråler sundhed. Indeholder mere end 25 g protein pr servering.
         Alle produkter du finder på vores side, er lavet ud fra en blanding af, Sojaprotein isolat, hvid hamp protein, Ærteprotein, Solsikkeprotein og Risprotein.
     </p>
+</section>
+
+<section class="pProdukter sec">
+
+    <h1>Proteinpulver</h1>
+
+    <?php
+    $dbProdukter= mysqli_query($db, "SELECT * FROM produkter WHERE pKategori = 'pulver'" );
+    while ($data = mysqli_fetch_assoc($dbProdukter)) {
+
+    ?>
+
+    <div class="pProdukt">
+        <div class="pImg">
+            <?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $data['pBillede'] ).'"/>'; ?>
+            <div class="pOverlay">
+                <a class="pHover">Læs mere</a>
+            </div>
+        </div>
+
+        <a href="#"><?php echo "<p>".$data["pNavn"]. "</p>"; ?></a>
+        <p class="pPris"><?php echo $data["pPris"]." DK"?></p>
+        <a href="#"><div class="pAdd">Læg i Kurv</div></a>
+    </div>
+
+    <?php } ?>
+</section>
+
+<section class="pProdukter sec">
+
+    <h1>Proteinbarer</h1>
+
+    <?php
+    $dbProdukter= mysqli_query($db, "SELECT * FROM produkter WHERE pKategori = 'bar'" );
+    while ($data = mysqli_fetch_assoc($dbProdukter)) {
+
+        ?>
+
+        <div class="pProdukt">
+            <div class="pImg">
+                <?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $data['pBillede'] ).'"/>'; ?>
+                <div class="pOverlay">
+                    <a class="pHover">Læs mere</a>
+                </div>
+            </div>
+
+            <a href="#"><?php echo "<p>".$data["pNavn"]. "</p>"; ?></a>
+            <p class="pPris"><?php echo $data["pPris"]." DK"?></p>
+            <a href="#"><div class="pAdd">Læg i Kurv</div></a>
+        </div>
+
+    <?php } ?>
 </section>
 
 </body>

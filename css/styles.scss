@@ -46,8 +46,57 @@ h1{
   $green: #a6cf9a;
   $red: #E55B69;
   //section: Headerfooter-start
-  #infotop{
+
+
+#logo{
+  display: none;
+}
+
+#infotop{
+  display: none;
   }
+nav{
+  position: relative;
+  height: 50px;
+}
+
+#burgermenu{
+  padding: 0 20px;
+  color: black;
+}
+
+#menupunkter{
+  position: absolute;
+  display: none;
+  width: 100%;
+  z-index: 100;
+
+  a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: $green;
+    text-align: center;
+    height: 50px;
+  }
+}
+//footer
+footer{
+  background-color: $green;
+  width: 100%;
+  height: 550px;
+  color: white;
+}
+.footerimg{
+  Padding: 0 12% 0 10%;
+}
+#infogrid{
+  text-align: center;
+
+}
+#tilmeld{
+  text-align: center;
+}
   //section: Headerfooter-slut
 
   //section: Forside-start
@@ -261,6 +310,48 @@ p{
 
   @media screen and (min-width: 768px) {
     // Alt der ændres i tablet stående fra mobil
+    //section: Headerfooter-start
+    //header
+    header{
+    }
+
+    #infotop{
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr;
+      background-color: $green;
+      color: white;
+    }
+    #infotoptekst{
+      grid-column: 1 / 2;
+      font-size: 18px;
+      padding-left: 10px;
+    }
+    #infotopfacebook{
+      grid-column: 2 / 3;
+      color: white;
+    }
+    #infotopinstagram{
+      grid-column: 3 / 4;
+    }
+    #logo{
+      display: block;
+      width: 200px;
+    }
+    #logomobil{
+      display: none;
+    }
+
+
+    #burgermenu{
+           display: none;
+    }
+
+    #menupunkter{
+      display: inline;
+      text-align: center;
+    }
+    //section: Headerfooter-slut
+
   }
 
   @media screen and (min-width: 992px) {

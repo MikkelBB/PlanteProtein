@@ -45,10 +45,11 @@
          <div id="infotopfacebook"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></div>
          <div id="infotoptekstinstagram"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></div>
      </div>
-    <a href="index.php"><img src="images/46976947_255908878387952_7651757664031997952_n.png"></a>
+    <a href="index.php"><img id="logomobil" src="images/46941417_360092324559619_3230568615006699520_n.png"></a>
+    <a href="index.php"><img id="logo" src="images/46976947_255908878387952_7651757664031997952_n.png"></a>
     <nav>
         <div id="burgermenu">
-            <i class="fas fa-bars fa-2x"></i>
+            <i class="fas fa-bars fa-3x"></i>
         </div>
         <span id="menupunkter">
             <span id="menuhover">
@@ -60,32 +61,51 @@
         </span>
     </nav>
 </header>
+
+
+<footer>
+    <img  class="footerimg" src="images/Planteprotein_logo_footer.png">
+    <div id="infogrid">
+        <i class="fas fa-map-marker-alt"></i> Fiktiv Adresse
+        <br><br>
+        <i class="fas fa-mobile-alt"></i> 33 44 55 66
+        <br><br>
+        <i class="fas fa-envelope"></i> Info@Planteprotein.dk
+        <br><br>
+        <i class="fab fa-facebook-square"></i> PlanteProtein
+    </div>
+    <br>
+    <div id="tilmeld">
+        <div id="formular">
+
+        </div>
+        <div id="betingelse">
+            Betingelser & Forsendelse
+            <br>
+            Betalingsmuligheder
+            <br>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-mastercard"></i>
+        </div>
+    </div>
+    <div id="instagram">
+
+    </div>
+</footer>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-    $(document).ready(function (e) {
-        var navOpen = 0;
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('.toggle-nav').click(function(e) {
+            jQuery(this).toggleClass('active');
+            jQuery('.menu ul').toggleClass('active');
 
-        $("#burgermenu").click(function(e) {
-            if(navOpen == 1){
-                $("#menupunkter").slideUp(500);
-                navOpen = 0;
-            }else{
-                $("#menupunkter").slideDown(600);
-                navOpen = 1;
-            }
+            e.preventDefault();
         });
-
-        $(window).resize(function(e){
-            var width = $(window).width();
-
-            if(width > 991){
-                $("#menupunkter").css({"display":"block"});
-            }else{
-                $("#menupunkter").css("display", "none");
-                navOpen = 0;
-            }
-        });
-    </script>
-
+    });
+</script>
 </body>
 </html>

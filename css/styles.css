@@ -57,13 +57,27 @@ img {
   margin-right: auto;
   text-align: center;
   border-bottom: solid 1px #a6cf9a;
-  width: 50%; }
+  width: 50%;
+  margin-top: 25px; }
 
-.nyhedsend {
-  margin-right: auto;
-  margin-left: auto;
-  border: solid 1px black;
-  width: 30%; }
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.koebknap {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #E55B69;
+  padding: 0 0 5px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+
+button {
+  color: #ffffff; }
 
 .nyhedbilleder img {
   margin-left: auto;
@@ -85,7 +99,8 @@ img {
   width: 50%;
   border-bottom: solid 1px #a6cf9a;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 25px; }
 
 .anbefaletsend {
   text-align: center; }
@@ -163,5 +178,100 @@ p {
 
 .nyhedbilleder img {
   width: 50%; }
+
+@media screen and (min-width: 1200px) {
+  .stortbillede img {
+    width: 1600px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .nyhedtekst {
+    text-align: center; }
+
+  .nyheder {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px; }
+
+  .nyhednavn {
+    text-align: center; }
+
+  .nyhedpris {
+    color: #a6cf9a;
+    text-align: center; }
+
+  .nyhedbilleder {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: solid 1px #a6cf9a;
+    width: 50%;
+    margin-top: 25px; }
+
+  .koebknap {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E55B69;
+    padding: 0 0 5px 0; }
+
+  button {
+    color: #ffffff; }
+
+  .nyhedbilleder img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px; }
+
+  .anbefalet {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px; }
+
+  .anbefalet img {
+    height: 200px;
+    width: 200px; }
+
+  .anbefaletpris {
+    color: #a6cf9a;
+    text-align: center; }
+
+  .anbefaletnavn {
+    text-align: center; }
+
+  .anbefalettekst {
+    text-align: center; }
+
+  .anbefaletbilleder {
+    width: 50%;
+    border-bottom: solid 1px #a6cf9a;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px; }
+
+  .anbefaletsend {
+    text-align: center; }
+
+  .anmeldelser {
+    justify-content: space-around;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    padding: 50px; }
+
+  .anmeldelsertekst {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -66,15 +66,16 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 ?>
 <br>
 
-
+<div class="nyhedtekst"> <h1>Nyheder</h1></div>
 
 <div class="nyheder">
-    <div class="nyhedtekst"> <h1>Nyheder</h1></div>
     <?php
     $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 3 OFFSET 14");
     while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
     $var = $eksamen ["pId"];
     ?>
+
+        <div class="nyhedhvid">
     <div class="nyhedbilleder">
 
         <a href="produkterindividuel.php?id=<?php echo $var ?>"><img src="images/<?php echo $eksamen["pBillede"] ?>"></a>
@@ -87,10 +88,12 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 
         ?>
 
-        <form class="nyhedsend" method="post" action="index.php">
-            <button type="submit">Læg i kurv</button>
+        <form  method="post" action="index.php">
+            <button type="submit" class="koebknap">Læg i kurv</button>
         </form>
 
+
+        </div>
         <?php
     }
 
@@ -99,17 +102,17 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
 </div>
 
 
-
+<div class="anbefalettekst"> <h1>Anbefalet</h1> </div>
 
 <div class="anbefalet">
-    <div class="anbefalettekst"> <h1>Anbefalet</h1> </div>
+
 
     <?php
     $eksamenQuery = mysqli_query($db, "SELECT * FROM produkter WHERE pId LIMIT 4 OFFSET 5");
     while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
     $var = $eksamen ["pId"];
     ?>
-
+<div class="anbefalethvid">
     <div class="anbefaletbilleder">
         <a href="produkterindividuel.php?id=<?php echo $var ?>"><img src="images/<?php echo $eksamen["pBillede"] ?>"></a>
     </div>
@@ -120,21 +123,23 @@ while($eksamen = mysqli_fetch_assoc($eksamenQuery)) {
         ?>
 
 
-        <form class="anbefaletsend" method="post" action="index.php">
-            <button type="submit">Læg i kurv</button>
+        <form class="test" method="post" action="index.php">
+            <button type="submit" class="koebknap" >Læg i kurv</button>
         </form>
+</div>
 
         <?php
     }
 
 
     ?>
+
 </div>
 
 
-
+<div class="anmeldelsertekst"><h1>Anmeldelser</h1></div>
 <div class="anmeldelser">
-    <h1>Anmeldelser</h1>
+
     <div class="soeren">
         <div class="soerenbillede"></div>
         <h2>Søren Henriksen</h2><br>

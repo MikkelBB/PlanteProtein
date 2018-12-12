@@ -1,0 +1,319 @@
+// Alt der gælder for mobil og højere
+
+* { // Gælder alt på hele siden
+  -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
+  box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+}
+
+body {
+  margin: 0; // Ingen kanter i siden af browser
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+}
+
+ul, ol {
+  margin: 0; // Ingen ydre margen fra lister
+  padding: 0; // Ingen indre margen fra lister
+  list-style-position: inside; // List punkter står på linje
+}
+
+li {
+  margin: 0; // Ingen ydre margen fra listpunkter
+}
+
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+$green: #a6cf9a;
+$red: #E55B69;
+//section: Headerfooter-start
+#infotop{
+}
+//section: Headerfooter-slut
+
+//section: Forside-start
+//section: Forside-slut
+
+//section: Produkter-start
+//section: Produkter-slut
+
+//section: produkterinfo-start
+.pTop{
+  text-align: center;
+  padding: 50px;
+}
+
+.line{
+  width: 80%;
+  height: 2px;
+  background-color: $green;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pProdukter{
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.pProdukt{
+  width: 250px;
+  height: 350px;
+  padding: 20px;
+  text-align: left;
+  margin: 40px;
+}
+
+.pFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pImg{
+  width: 100%;
+  height: 200px;
+  top: 0;
+  right: 0;
+  border-bottom: solid 1px $green;
+  transform: translate(0%, 0%);
+}
+
+.pImage{
+  display: block;
+  height: 170px;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.stop{
+  height: 50px;
+}
+
+.pHover{
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  transform: translate(0%, 0%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.pHover:hover{
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.pOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(166, 207, 154, 0.8);
+}
+
+.pImg:hover .pOverlay{
+  opacity: 1;
+}
+
+.pPris{
+  font-size: 30px;
+  color: $green;
+}
+
+.pAdd{
+  width: 120px;
+  padding: 5px;
+  background-color: $red;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pAdd:hover{
+  text-decoration: underline;
+}
+
+.betingelser{
+  width: 100%;
+  padding: 30px;
+}
+
+.betingContent{
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.line2{
+  width: 350px;
+  height: 2px;
+  background-color: $green;
+  margin: 30px auto;
+}
+
+.pBestseller{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 4 px $green;
+}
+
+.boldCenter{
+  text-align: center;
+  font-weight: bold;
+}
+
+.computer{
+  display: none;
+}
+
+.bestImg{
+  margin: 20px;
+}
+
+.readTab{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//section: produkterinfo-slut
+
+//section: Omos-start
+.sektion1, .sektion2{
+  width: 100%;
+  padding: 50px;
+}
+
+.billedeomos{
+  padding-top: 20px;
+}
+.billede2{
+  width:80%;
+  height: auto;
+  margin-top: 50px;
+}
+//section: Omos-slut
+
+//section: Blog-start
+//section: Blog-slut
+
+//section: Bloginfo-start
+//section: Bloginfo-slut
+
+
+@media screen and (min-width: 768px) {
+  // Alt der ændres i tablet stående fra mobil
+  .billede2{
+    width: 200px;
+    height: 200px;
+  }
+  .tekst2{
+    max-width: 400px;
+
+  }
+}
+
+@media screen and (min-width: 992px) {
+  // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  .billedeomos{
+    padding-top: 0px;
+  }
+
+  .sektion1{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .omostekst{
+    margin-left: 50px;
+  }
+  .sektion2 {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .omvendt{
+    flex-direction: row-reverse;
+  }
+  .tekst2 {
+    margin-right: 50px;
+  }
+  .tekst3{
+    margin-left: 50px;
+  }
+  .billede2 {
+    margin-top: 0px;
+  }
+
+  .betingelser{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .line2{
+    height: 600px;
+    width: 2px;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  .betingContent{
+    width: 300px;
+  }
+
+  .line2{
+    height: 550px;
+  }
+}
+
+@media print {
+  // Alt der gælder for print specifikt
+}

@@ -46,60 +46,17 @@ h1{
   $green: #a6cf9a;
   $red: #E55B69;
   //section: Headerfooter-start
-
-
-#logo{
-  display: none;
-}
-
-#infotop{
-  display: none;
+  #infotop{
   }
-nav{
-  position: relative;
-  height: 50px;
-}
-
-#burgermenu{
-  padding: 0 20px;
-  color: black;
-}
-
-#menupunkter{
-  position: absolute;
-  display: none;
-  width: 100%;
-  z-index: 100;
-
-  a{
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    background-color: $green;
-    text-align: center;
-    height: 50px;
-  }
-}
-//footer
-footer{
-  background-color: $green;
-  width: 100%;
-  height: 550px;
-  color: white;
-}
-.footerimg{
-  Padding: 0 12% 0 10%;
-}
-#infogrid{
-  text-align: center;
-
-}
-#tilmeld{
-  text-align: center;
-}
   //section: Headerfooter-slut
 
   //section: Forside-start
+
+.stortbillede img{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .nyhedtekst{
@@ -109,7 +66,18 @@ footer{
 .nyheder{
   margin-right: auto;
   margin-left: auto;
+
 }
+
+.nyhednavn{
+  text-align: center;
+}
+
+.nyhedpris{
+  color: $green;
+  text-align: center;
+}
+
 
 .nyhedbilleder{
   margin-left: auto;
@@ -117,23 +85,52 @@ footer{
   text-align: center;
   border-bottom: solid 1px $green;
   width: 50%;
+  margin-top: 25px;
 }
 
-.nyhedsend{
+form{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.koebknap{
+  width: 100px;
+  height: 80px;
   text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  background-color: $red;
+  padding: 0 0 5px 0;
+  justify-content:center;
+  align-items:center;
+  display: flex;
+}
+
+button{
+  color: #ffffff;
 }
 
 
 .nyhedbilleder img{
   margin-left: auto;
   margin-right: auto;
-  width: 50px;
-  height: 250px;
+  height: 200px;
+  width: 200px;
 }
 
+.anbefaletpris{
+  color: $green;
+  text-align: center;
+}
+
+.anbefaletnavn{
+  text-align: center;
+
+}
 
 .anbefalettekst{
   text-align: center;
+
 }
 
 .anbefaletbilleder{
@@ -141,8 +138,9 @@ footer{
   border-bottom: solid 1px $green;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 25px;
 }
+
 
 .anbefaletsend{
   text-align: center;
@@ -161,7 +159,8 @@ p{
 
 .soeren{
   text-align: center;
-  border: 3px solid green;
+  padding: 15px;
+
 }
 
 .anmeldelser{
@@ -170,10 +169,11 @@ p{
 
 .soerenbillede{
   background-image: url("../images/photo-1496345875659-11f7dd282d1d.jpeg");
-  height: 50%;
-  width: 50%;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
-  border: 3px solid green;
   margin-right: auto;
   margin-left: auto;
 
@@ -181,6 +181,17 @@ p{
 
 .soeren img{
   width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.christinabillede{
+  background-image: url("../images/photo-1529932260967-af9d3bbd8138.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -195,6 +206,18 @@ p{
 
 .christina{
   text-align: center;
+  padding: 15px;
+}
+
+.jeppebillede{
+  background-image: url("../images/photo-1489779162738-f81aed9b0a25.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .jeppe img{
@@ -206,6 +229,7 @@ p{
 
 .jeppe{
   text-align: center;
+  padding: 15px;
 }
 
 .nyhedbilleder img{
@@ -237,57 +261,159 @@ p{
 
   @media screen and (min-width: 768px) {
     // Alt der ændres i tablet stående fra mobil
-    //section: Headerfooter-start
-    //header
-    header{
-    }
-
-    #infotop{
-      display: grid;
-      grid-template-columns: 3fr 1fr 1fr;
-      background-color: $green;
-      color: white;
-    }
-    #infotoptekst{
-      grid-column: 1 / 2;
-      font-size: 18px;
-      padding-left: 10px;
-    }
-    #infotopfacebook{
-      grid-column: 2 / 3;
-      color: white;
-    }
-    #infotopinstagram{
-      grid-column: 3 / 4;
-    }
-    #logo{
-      display: block;
-      width: 200px;
-    }
-    #logomobil{
-      display: none;
-    }
-
-
-    #burgermenu{
-           display: none;
-    }
-
-    #menupunkter{
-      display: inline;
-      text-align: center;
-    }
-    //section: Headerfooter-slut
-
   }
 
   @media screen and (min-width: 992px) {
     // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+    //section: Forside-start
+
+
+
+
+
+    //section: Forside-slut
   }
 
   @media screen and (min-width: 1200px) {
     // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+    //section: Forside-start
+    .stortbillede img{
+      width: 1600px;
+      height: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nyhedtekst{
+      text-align: center;
+    }
+
+    .nyheder{
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      cursor: pointer;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px;
+    }
+
+    .nyhednavn{
+      text-align: center;
+    }
+
+    .nyhedpris{
+      color: $green;
+      text-align: center;
+    }
+
+
+    .nyhedbilleder{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border-bottom: solid 1px $green;
+      width: 50%;
+      margin-top: 25px;
+    }
+
+    .koebknap{
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      border-radius: 10px 10px 10px 10px;
+      background-color: $red;
+      padding: 0 0 5px 0;
+
+    }
+
+    button{
+      color: #ffffff;
+    }
+
+
+    .nyhedbilleder img{
+      margin-left: auto;
+      margin-right: auto;
+      height: 200px;
+      width: 200px;
+    }
+
+    .nyhedhvid{
+    }
+
+
+
+    .anbefalet{
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px;
+    }
+
+    .anbefalet img{
+      height: 200px;
+      width: 200px;
+    }
+
+
+    .anbefaletpris{
+      color: $green;
+      text-align: center;
+    }
+
+    .anbefaletnavn{
+      text-align: center;
+
+    }
+
+    .anbefalettekst{
+      text-align: center;
+
+    }
+
+    .anbefaletbilleder{
+      width: 50%;
+      border-bottom: solid 1px $green;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+
+    .anbefaletsend{
+      text-align: center;
+    }
+
+    .anbefalethvid{
+    }
+
+    .anmeldelser{
+      justify-content: space-around;
+      display: flex;
+      
+      width: 75%;
+      padding: 50px;
+    }
+
+    .anmeldelsertekst{
+      text-align: center;
+    }
+
+
+
+
+
+
+    //section: Forside-slut
   }
+
+
+
 
   @media print {
     // Alt der gælder for print specifikt

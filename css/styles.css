@@ -33,48 +33,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-#logo {
-  display: none; }
-
-#infotop {
-  display: none; }
-
-nav {
-  position: relative;
-  height: 50px; }
-
-#burgermenu {
-  padding: 0 20px;
-  color: black; }
-
-#menupunkter {
-  position: absolute;
-  display: none;
-  width: 100%;
-  z-index: 100; }
-  #menupunkter a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    background-color: #a6cf9a;
-    text-align: center;
-    height: 50px; }
-
-footer {
-  background-color: #a6cf9a;
-  width: 100%;
-  height: 550px;
-  color: white; }
-
-.footerimg {
-  Padding: 0 12% 0 10%; }
-
-#infogrid {
-  text-align: center; }
-
-#tilmeld {
-  text-align: center; }
-
 .stortbillede img {
   width: 80%;
   margin-left: auto;
@@ -221,38 +179,6 @@ p {
 .nyhedbilleder img {
   width: 50%; }
 
-@media screen and (min-width: 768px) {
-  #infotop {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    background-color: #a6cf9a;
-    color: white; }
-
-  #infotoptekst {
-    grid-column: 1 / 2;
-    font-size: 18px;
-    padding-left: 10px; }
-
-  #infotopfacebook {
-    grid-column: 2 / 3;
-    color: white; }
-
-  #infotopinstagram {
-    grid-column: 3 / 4; }
-
-  #logo {
-    display: block;
-    width: 200px; }
-
-  #logomobil {
-    display: none; }
-
-  #burgermenu {
-    display: none; }
-
-  #menupunkter {
-    display: inline;
-    text-align: center; } }
 @media screen and (min-width: 1200px) {
   .stortbillede img {
     width: 1600px;
@@ -340,8 +266,6 @@ p {
   .anmeldelser {
     justify-content: space-around;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
     width: 75%;
     padding: 50px; }
 

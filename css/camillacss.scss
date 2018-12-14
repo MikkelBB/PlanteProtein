@@ -10,6 +10,10 @@ body {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
+  background-image: url("../images/baggrund.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+
 }
 
 h1{
@@ -121,6 +125,12 @@ $red: #E55B69;
 
 .stop{
   height: 50px;
+}
+
+.pLineImg{
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
 }
 
 .pHover{

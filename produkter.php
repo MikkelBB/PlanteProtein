@@ -49,7 +49,6 @@
 </section>
 
 <div class="line"></div>
-
 <section class="bestseller">
 
     <?php
@@ -107,7 +106,8 @@
     </div>
 </section>
 
-<div class="line"></div>
+<div class="pLineImg"><img src="images/48364483_499752773853381_7723101477455003648_n.png" alt=""></div>
+
 
 <section class="pProdukter sec">
 
@@ -136,7 +136,8 @@
     <?php } ?>
     </div>
 </section>
-<div class="line"></div>
+<div class="pLineImg"><img src="images/48364483_499752773853381_7723101477455003648_n.png" alt=""></div>
+
 <section class="betingelser">
 
     <div class="betingContent">

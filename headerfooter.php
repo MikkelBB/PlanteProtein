@@ -51,17 +51,17 @@
         <div id="burgermenu">
             <i class="fas fa-bars fa-3x"></i>
         </div>
-        <span id="menupunkter">
+        <div id="menupunkter">
             <span id="menuhover">
                 <a href="index.html">Forside</a>
                 <a href="produkter.php">Produkter</a>
                 <a href="omos.html">Om os</a>
                 <a href="blog.php">Blog</a>
             </span>
-        </span>
+        </div>
     </nav>
 </header>
-
+<br><br><br><br><br><br><br><br><br><br>
 <?php ?>
 <footer>
     <img  class="footerimg" src="images/Planteprotein_logo_footer.png">
@@ -97,7 +97,7 @@
         </div>
     </div>
     <div id="instagram">
-        Instagram Opslag
+        <h1 id="instatext">Instagram Opslag</h1>
         <img id="insta1" src="images/instagrambillede1.png">
         <img id="insta2" src="images/instagrambillede2.png">
         <img id="insta3" src="images/instagrambillede3.png">
@@ -107,21 +107,5 @@
     </div>
 </footer>
 
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('.toggle-nav').click(function(e) {
-            jQuery(this).toggleClass('active');
-            jQuery('.menu ul').toggleClass('active');
-
-            e.preventDefault();
-        });
-    });
-</script>
 </body>
 </html>

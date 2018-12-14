@@ -62,7 +62,7 @@
     </nav>
 </header>
 
-
+<?php ?>
 <footer>
     <img  class="footerimg" src="images/Planteprotein_logo_footer.png">
     <div id="infogrid">
@@ -77,8 +77,13 @@
     <br>
     <div id="tilmeld">
         <div id="formular">
-
+            <form method="post">
+                <input id="tilmeldfelt" type="text" name="Tilmeld" placeholder="Indtast din email her" value="">
+                <br>
+                <button id="button" type="submit">Tilmeld</button>
+            </form>
         </div>
+        <br>
         <div id="betingelse">
             Betingelser & Forsendelse
             <br>
@@ -94,6 +99,10 @@
 
     </div>
 </footer>
+
+
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

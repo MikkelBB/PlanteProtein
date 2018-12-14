@@ -88,14 +88,30 @@ footer{
   color: white;
 }
 .footerimg{
-  Padding: 0 12% 0 10%;
+  Padding: 0 10% 0 12%;
 }
 #infogrid{
   text-align: center;
-
 }
 #tilmeld{
   text-align: center;
+}
+#tilmeldfelt{
+  text-align: center;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border-bottom: solid 1px white;
+}
+#tilmeldfelt:focus, input:focus{
+  outline: none;
+}
+#button{
+  background-color: white;
+  border: none;
+  padding: 5px 25px 5px 25px;
+  margin-top: 5px;
+  color: $green;
 }
   //section: Headerfooter-slut
 

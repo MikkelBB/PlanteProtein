@@ -159,21 +159,37 @@ p {
 @media screen and (min-width: 768px) {
   #infotop {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     background-color: #a6cf9a;
-    color: white; }
+    color: white;
+    padding-left: 100px; }
+    #infotop a {
+      text-decoration: none;
+      color: white; }
 
   #infotoptekst {
     grid-column: 1 / 2;
-    font-size: 18px;
+    grid-row: 1;
+    font-size: 20px;
     padding-left: 10px; }
 
-  #infotopfacebook {
+  #infotoptekst2 {
+    grid-row: 1;
     grid-column: 2 / 3;
+    font-size: 20px; }
+
+  #infotoptekst3 {
+    grid-row: 1;
+    grid-column: 3 / 4;
+    font-size: 20px; }
+
+  #infotopfacebook {
+    margin-left: 150px;
+    grid-column: 4 / 5;
     color: white; }
 
   #infotopinstagram {
-    grid-column: 3 / 4; }
+    grid-column: 5 / 6; }
 
   #logo {
     display: block;

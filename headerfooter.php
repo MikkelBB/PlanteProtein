@@ -41,7 +41,9 @@
 <body>
 <header>
      <div id="infotop">
-         <div id="infotoptekst">DAG TIL DAG LEVERING  30 DAGES FULD RETURET  GRATIS FORSENDELSE VED KØB OVER 700 KR. </div>
+         <div id="infotoptekst">DAG TIL DAG LEVERING</div>
+         <div id="infotoptekst2">30 DAGES FULD RETURET</div>
+         <div id="infotoptekst3">GRATIS FORSENDELSE VED KØB OVER 700 KR.</div>
          <div id="infotopfacebook"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></div>
          <div id="infotoptekstinstagram"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></div>
      </div>

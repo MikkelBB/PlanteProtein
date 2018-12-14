@@ -29,7 +29,7 @@
 <meta property="og:locale" content="da_DK">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/headerfooter.css" rel="stylesheet" type="text/css">
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/una2owl.css">
 <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->

@@ -47,6 +47,7 @@
          <div id="infotopfacebook"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></div>
          <div id="infotoptekstinstagram"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></div>
      </div>
+    <img id="headerbillede" src="images/headerbillede_resized.png">
     <a href="index.php"><img id="logomobil" src="images/46941417_360092324559619_3230568615006699520_n.png"></a>
     <a href="index.php"><img id="logo" src="images/46976947_255908878387952_7651757664031997952_n.png"></a>
     <nav>

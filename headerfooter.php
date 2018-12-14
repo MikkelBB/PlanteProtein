@@ -77,6 +77,7 @@
     <br>
     <div id="tilmeld">
         <div id="formular">
+            <span style="font-weight: bold">Tilmeld dig vores nyhedsbrev</span>
             <form method="post">
                 <input id="tilmeldfelt" type="text" name="Tilmeld" placeholder="Indtast din email her" value="">
                 <br>
@@ -96,7 +97,13 @@
         </div>
     </div>
     <div id="instagram">
-
+        Instagram Opslag
+        <img id="insta1" src="images/instagrambillede1.png">
+        <img id="insta2" src="images/instagrambillede2.png">
+        <img id="insta3" src="images/instagrambillede3.png">
+        <img id="insta4" src="images/instagrambillede4.png">
+        <img id="insta5" src="images/instagrambillede5.png">
+        <img id="insta6" src="images/instagrambillede6.png">
     </div>
 </footer>
 

@@ -106,10 +106,13 @@ footer{
     outline: none;
 }
 #button{
+  margin-top: 5px;
   background-color: white;
-  Padding: 2px 15px 2px 15px;
+  Padding: 5px 18px 5px 18px;
   border: none;
+  color: $green;
 }
+
   //section: Headerfooter-slut
 
   //section: Forside-start
@@ -290,7 +293,21 @@ p{
       display: inline;
       text-align: center;
     }
-    //section: Headerfooter-slut
+//section: Headerfooter-slut
+//footer
+    footer{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #instagram{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+
+
 
   }
 

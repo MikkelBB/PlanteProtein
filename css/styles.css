@@ -85,9 +85,11 @@ footer {
   outline: none; }
 
 #button {
+  margin-top: 5px;
   background-color: white;
-  Padding: 2px 15px 2px 15px;
-  border: none; }
+  Padding: 5px 18px 5px 18px;
+  border: none;
+  color: #a6cf9a; }
 
 .nyhedtekst {
   text-align: center; }
@@ -206,6 +208,14 @@ p {
 
   #menupunkter {
     display: inline;
-    text-align: center; } }
+    text-align: center; }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  #instagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 /*# sourceMappingURL=styles.css.map */
